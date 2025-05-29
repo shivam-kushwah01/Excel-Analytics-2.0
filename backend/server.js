@@ -2,7 +2,8 @@ require('dotenv').config();
 
 const express = require('express');
 const mongoose = require('mongoose');
-const User = require('./models/User');
+const User = require('./models/user');
+const authRouter = require('./routes/authRoutes')
 const app = express();
 
 
@@ -22,6 +23,7 @@ mongoose.connect(process.env.MONGO_URI)
 // .then(user => console.log("user saved!!" , user))
 // .catch(err => console.log("error occurs" , err));
 
+app.use("/user", authRouter);
 
 app.listen(port , () => {
   console.log(`app is listening at port ${port}`);

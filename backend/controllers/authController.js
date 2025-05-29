@@ -1,4 +1,4 @@
-let User = require('./models/User');
+let User = require('../models/user');
 let bcrypt = require('bcryptjs');
 let JWT = require('jsonwebtoken');
 
@@ -22,5 +22,5 @@ module.exports.register = async (req, res) => {
 
 module.exports.login = (req , res) => {
     let { username , password } = req.body;
-    //code is remaining
+    
 }
