@@ -1,0 +1,17 @@
+nav{
+    background-color: rgb(35, 120, 248);
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+}
+
+span{
+    margin-left: 2rem;
+}
+
+.login a{
+    margin-right: 2rem;
+}
+
