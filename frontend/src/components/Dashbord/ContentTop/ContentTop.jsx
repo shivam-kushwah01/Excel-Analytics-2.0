@@ -1,15 +1,11 @@
-import { iconsImgs } from "../../../utils/images";
+import { iconsImgs } from "../utils/images";
 import "./ContentTop.css";
 import { useContext } from "react";
-import { SidebarContext } from "../../../context/sidebarContext";
+import { SidebarContext } from "../context/sidebarContext";
 
 
 const ContentTop = () => {
-    const handleLogout = () => {
-		localStorage.removeItem("token");
-		window.location.reload();
-	};
-
+    
   const { toggleSidebar } = useContext(SidebarContext);
   return (
     <div className="main-content-top">
@@ -20,12 +16,6 @@ const ContentTop = () => {
             <h3 className="content-top-title">Home</h3>
         </div>
         <div className="content-top-btns">
-           
-                <button type="button" className="white_btn" onClick={handleLogout}>
-                                Logout
-                 </button>
-          
-            
             <button type="button" className="search-btn content-top-btn">
                 <img src={ iconsImgs.search } alt="" />
             </button>

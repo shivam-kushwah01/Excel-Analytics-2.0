@@ -1,8 +1,8 @@
-import { iconsImgs } from "../../../utils/images";
+import { iconsImgs } from "../utils/images";
 
 import "./Records.css";
 
-const Cards = () => {
+const Records = () => {
   return (
     <div className="grid-one-item grid-common grid-c1">
         <div className="grid-c-title">
@@ -11,23 +11,18 @@ const Cards = () => {
                 <img src={ iconsImgs.plus } />
             </button>
         </div>
-        <div className="grid-c1-content">
-           
-            <img src={iconsImgs.barchart} />
-            <div className="card-wrapper">
-                <span className="card-pin-hidden"> 1,480 </span>
-               
-            </div>
-            <div className="card-logo-wrapper">
+        
+        <div className="grid-box1 ">
+           <img src={iconsImgs.barchart} />
+            <span className="lg-value">100,000</span>
+        </div>
+            <br></br>
                 <div>
-               
                     <p className="text text-sm text-white">Viwe details</p>
                 </div>
-                
-            </div>
         </div>
-    </div>
+    
   )
 }
 
-export default Cards
+export default Records

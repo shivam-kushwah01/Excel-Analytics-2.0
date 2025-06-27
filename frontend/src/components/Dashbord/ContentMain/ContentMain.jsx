@@ -2,12 +2,11 @@ import "./ContentMain.css";
 import Records from "../Records/Records";
 import Process from "../Process/Process";
 import Dataquality from "../Dataquality/Dataquality";
-
-import Budget from "../Budget/Budget";
-import Subscriptions from "../Subscriptions/Subscriptions";
-import Savings from "../Growth/Growth";
-import Loans from "../Loans/Loans";
-import Financial from "../Financial/Financial";
+import Charts from "../Charts/Charts";
+import History from "../History/History";
+import Growth from "../Growth/Growth";
+import AI_insides from "../AI_insides/AI_insides";
+import Help from "../Help/Help";
 
 const ContentMain = () => {
   return (
@@ -16,21 +15,21 @@ const ContentMain = () => {
             <Records />
             <Process />
             <Dataquality />
-             <Savings />
+            <Growth />
         </div>
         <div className="content-grid-two">
-            <Budget />
+            <Charts />
             <div className="grid-two-item">
               <div className="subgrid-two">
-                <Subscriptions />
+                <History />
                
               </div>
             </div>
 
             <div className="grid-two-item">
               <div className="subgrid-two">
-                <Loans />
-                <Financial />
+                <AI_insides />
+                <Help />
               </div>
             </div>
         </div>

@@ -1,8 +1,8 @@
-import { iconsImgs } from "../../../utils/images";
+import { iconsImgs } from "../utils/images";
 import "./Process.css";
-import { reportData } from "../../../data/data";
+import { reportData } from "../data/data";
 
-const Report = () => {
+const Process = () => {
   return (
     <div className="grid-one-item grid-common grid-c3">
         <div className="grid-c-title">
@@ -12,30 +12,17 @@ const Report = () => {
             </button>
         </div>
         <div className="grid-c3-content">
-            <div className="grid-chart">
-                <div className="chart-vert-value">
-                    <span>100</span>
-                    <span>75</span>
-                    <span>50</span>
-                    <span>25</span>
-                    <span>0</span>
-                </div>
-                {
-                    reportData.map((report) => (
-                        <div className="grid-chart-bar" key={report.id}>
-                            <div className="bar-wrapper">
-                                <div className="bar-item1" style={{ height: `${report.value1 !== null ? "40%" : ""}` }}></div>
-                                <div className="bar-item2" style={{ height: `${report.value2 !== null ? "60%" : ""}` }}></div>
-                            </div>
-                            <span className="grid-hortz-value">Jan</span>
-                        </div>
-                    ))
-                }
-                
+            <div className="grid-box2 ">
+           <img src={iconsImgs.time} />
+            <span className="lg-value">100,000</span>
+        </div>
+            <br></br>
+            <div>
+                    <p className="text text-sm text-white">Viwe details</p>
             </div>
         </div>
     </div>
   )
 }
 
-export default Report
+export default Process
