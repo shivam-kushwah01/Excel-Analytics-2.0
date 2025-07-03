@@ -2,8 +2,10 @@
 .sidebar {
     background-color: var(--clr-primary);
     width: 260px;
+    height: 100vh;
     padding: 36px 20px;
     transition: var(--transition-default);
+    position: fixed;
   }
   .user-info {
     display: flex;

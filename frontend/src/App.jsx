@@ -4,10 +4,9 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import Navbar from "./components/Loginpage/navbar/navbar"
 import Signup from "./components/Loginpage/Singup";
 import Login from "./components/Loginpage/Login";
-import Footer from "./components/Loginpage/footer/footer";
 import Sidebar from './layout/Sidebar/Sidebar';
 import Content from './layout/Content/Content';
-
+import Charts from './layout/charts/charts';
 
 function App() {
   const user = localStorage.getItem("token");
@@ -15,20 +14,25 @@ function App() {
 
   return (
     <>
+
     <Routes>
 			<Route path="/signup" exact element = {
         <>
         <Navbar /> 
         <Signup/> 
-        <Footer/> 
         </>}/>
 			<Route path="/login" exact element = {
         <>
         <Navbar />
-        <Login /> 
-        <Footer/> 
+        <Login />  
         </>}/>
-      {user && <Route path="/" exact element={
+        <Route path="/charts" exact element = {
+        <>
+        {/* <Navbar /> 
+        <Sidebar /> */}
+        <Charts /> 
+        </>}/>
+      {<Route path="/" exact element={
         <>
        <div className='app'>
         <Sidebar />
