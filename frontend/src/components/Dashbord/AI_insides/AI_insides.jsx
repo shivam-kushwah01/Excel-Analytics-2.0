@@ -1,13 +1,13 @@
-import { iconsImgs } from "../../../utils/images";
-import "./Loans.css";
+import { iconsImgs } from "../utils/images";
+import "./AI_insides.css";
 
 const Loans = () => {
   return (
     <div className="subgrid-two-item grid-common grid-c7">
-        <div className="grid-c-title">
-            <h3 className="grid-c-title-text">Loans</h3>
+        <div className="grid-c-title text-silver-v1">
+            <h2 className="lg-value">AI Insides</h2>
             <button className="grid-c-title-icon">
-                <img src={iconsImgs.plus} />
+                <img src={ iconsImgs.plus } />
             </button>
         </div>
         <div className="grid-c7-content">

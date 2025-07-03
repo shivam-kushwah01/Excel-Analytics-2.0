@@ -1,12 +1,12 @@
-import { subscriptions } from "../../../data/data"
-import { iconsImgs } from "../../../utils/images"
-import "./Subscriptions.css";
+import { subscriptions } from "../data/data"
+import { iconsImgs } from "../utils/images"
+import "./History.css";
 
 const Subscriptions = () => {
   return (
     <div className="subgrid-two-item grid-common grid-c5">
-        <div className="grid-c-title">
-            <h3 className="grid-c-title-text">Subscriptions</h3>
+        <div className="grid-c-title text-silver-v1">
+            <h2 className="lg-value">History</h2>
             <button className="grid-c-title-icon">
                 <img src={ iconsImgs.plus } />
             </button>

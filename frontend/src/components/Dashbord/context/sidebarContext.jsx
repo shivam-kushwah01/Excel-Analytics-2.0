@@ -1,5 +1,5 @@
 import { createContext, useReducer } from "react";
-import reducer from "../reducer/sidebarReducer";
+import reducers from "../reducer/sidebarReducer";
 import PropTypes from 'prop-types';
 
 const initialState = {
@@ -8,7 +8,7 @@ const initialState = {
 
 export const SidebarContext = createContext({});
 export const SidebarProvider = ({ children }) => {
-    const [state, dispatch] = useReducer(reducer, initialState);
+    const [state, dispatch] = useReducer(reducers, initialState);
     const toggleSidebar = () => {
         dispatch({ type: "TOGGLE_SIDEBAR" })
     }

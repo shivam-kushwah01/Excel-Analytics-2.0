@@ -1,28 +1,14 @@
 /* grid c1 */
-.grid-c1 {
+
+
+.grid-box1 {
   display: flex;
-  flex-direction: column;
-  
+  align-items: center;
+  justify-content: space-between;
 }
 
-.grid-c1-content .lg-value {
-  margin-top: 8px;
-  margin-bottom: 16px;
-  color: #c7c4c6;
-}
-.grid-c1-content .expiry-text {
-  margin-bottom: 6px;
-}
-.grid-c1-content .card-wrapper {
-  display: flex;
-}
-.grid-c1-content .card-pin-hidden {
-  font-size: 32px;
-  margin-right: 8px;
-}
-.grid-c1-content span {
-  color: #8a8587;
-}
+
+
 
 
 @media screen and (max-width: 768px) {

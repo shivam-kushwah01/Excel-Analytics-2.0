@@ -2,25 +2,26 @@ import { iconsImgs } from "../utils/images";
 import { personsImgs } from "../utils/images";
 
 export const navigationLinks = [
-    { id: 1, title: 'Dashboard', image: iconsImgs.home },
-    { id: 2, title: 'Account', image: iconsImgs.user },
-    { id: 3, title: 'Charts', image: iconsImgs.report },
-    { id: 4, title: 'history', image: iconsImgs.plane },
-    { id: 7, title: 'AI Insides', image: iconsImgs.budget },
-    { id: 8, title: 'Help Center', image: iconsImgs.wealth },
-    { id: 10, title: 'Settings', image: iconsImgs.gears }
+    { id: 1, title: 'Dashboard', image: iconsImgs.home, path: '/' },
+    { id: 2, title: 'Charts', image: iconsImgs.report, path: '/charts'},
+    { id: 3, title: 'history', image: iconsImgs.plane, path: '/history' },
+    { id: 4, title: 'AI Insides', image: iconsImgs.budget, path: '/ai-insides' },
+    { id: 5, title: 'Help Center', image: iconsImgs.wealth , path: '/help'},
+    { id: 6, title: 'Settings', image: iconsImgs.gears , path: '/settings' },
+    { id: 7, title: 'Logout', image: iconsImgs.logout, path: '/logout',className: 'white_btn', style: { width: '70px' } } 
+    
 ];
 
 export const transactions = [
     {
-        id: 2, 
+        id: 1, 
         name: "Sarah Parker",
         image: personsImgs.person_four,
         date: "23/12/04",
         amount: 2200000
     },
     {
-        id: 12, 
+        id: 2, 
         name: "Krisitine Carter",
         image: personsImgs.person_three,
         date: "23/07/21",
@@ -32,19 +33,19 @@ export const transactions = [
 
 export const reportData = [
     {
-        id: 14,
+        id: 3,
         month: "Jan",
         value1: 45,
         value2: null
     },
     {
-        id: 15,
+        id: 4,
         month: "Feb",
         value1: 45,
         value2: 60
     },
     {
-        id: 16,
+        id: 6,
         month: "Mar",
         value1: 45,
         value2: null
