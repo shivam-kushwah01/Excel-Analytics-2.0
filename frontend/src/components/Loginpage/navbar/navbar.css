@@ -1,4 +1,4 @@
-/* .navbar{
+.navbar{
   
   display: flex;
   align-items: center;
@@ -52,44 +52,4 @@
     padding :10px 10px 10px 20px;
   }
 
- } */
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  z-index: 1000;
-  width: 100%;
-  padding: 1.5rem 2rem;
-  background: linear-gradient(to right, #f0f9ff, #e0f2fe);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.nav-logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--primary);
-}
-
-.nav-buttons .btn {
-  margin-left: 1rem;
-}
-
-.btn {
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.btn-primary {
-  background: var(--primary);
-  color: white;
-  border: none;
-}
-
-.btn-primary:hover {
-  background: var(--primary-dark);
-}
+ }

@@ -3,9 +3,9 @@ import { personsImgs } from "../utils/images";
 
 export const navigationLinks = [
     { id: 1, title: 'Dashboard', image: iconsImgs.home, path: '/' },
-    { id: 2, title: 'Charts', image: iconsImgs.report, path: '/charts'},
-    { id: 3, title: 'history', image: iconsImgs.plane, path: '/history' },
-    { id: 4, title: 'AI Insides', image: iconsImgs.budget, path: '/ai-insides' },
+    { id: 2, title: 'Users', image: iconsImgs.user, path: '/users' },
+    { id: 3, title: 'Charts', image: iconsImgs.report, path: '/charts'},
+    { id: 4, title: 'AI Insights', image: iconsImgs.budget, path: '/ai-insights' },
     { id: 5, title: 'Help Center', image: iconsImgs.wealth , path: '/help'},
     { id: 6, title: 'Settings', image: iconsImgs.gears , path: '/settings' },
     { id: 7, title: 'Logout', image: iconsImgs.logout, path: '/logout',className: 'white_btn', style: { width: '70px' } } 

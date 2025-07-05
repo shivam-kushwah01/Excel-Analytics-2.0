@@ -17,6 +17,7 @@
   color: var(--clr-white);
   font-size: 20px;
   font-weight: 600;
+  cursor: default;
 }
 .content-top-btn {
   color: brown;
@@ -26,8 +27,16 @@
   color: brown;
   width: 32px;
 }
+
+img {
+  fill: white;
+  transition: filter 0.3s ease;
+}
+
+
+
 .content-top-btn img:hover {
-  filter: brightness(0) invert(6);
+  filter: grayscale(100%) brightness(0.7);
 }
 .content-top-left {
   display: flex;

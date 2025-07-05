@@ -17,10 +17,10 @@ const ContentTop = () => {
         </div>
         <div className="content-top-btns">
             <button type="button" className="search-btn content-top-btn">
-                <img src={ iconsImgs.search } alt="" />
+                <img src={ iconsImgs.searchnew } alt="" />
             </button>
             <button className="notification-btn content-top-btn">
-                <img src={ iconsImgs.bell } />
+                <img src={ iconsImgs.bell2 } />
                 <span className="notification-btn-dot"></span>
             </button>
         </div>

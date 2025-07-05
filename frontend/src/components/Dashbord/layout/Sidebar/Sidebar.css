@@ -2,17 +2,15 @@
 .sidebar {
     background-color: var(--clr-primary);
     width: 260px;
-    height: 100vh;
     padding: 36px 20px;
     transition: var(--transition-default);
-    position: fixed;
-    margin-top: 5rem;
   }
   .user-info {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     column-gap: 16px;
+    cursor: default;
   }
   .info-name {
     font-weight: 500;
@@ -31,11 +29,11 @@
     text-transform: uppercase;
   }
   .navigation {
-    /* margin-top: 28px; */
+    margin-top: 28px;
     height: 600px;
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
   
-    /* &::-webkit-scrollbar {
+    &::-webkit-scrollbar {
       width: 4px;
     }
   
@@ -47,7 +45,7 @@
     &::-webkit-scrollbar-thumb {
       background-color: var(--clr-pumpkin);
       border-radius: 18px;
-    } */
+    }
   }
   .sidebar-change {
     margin-left: -260px;

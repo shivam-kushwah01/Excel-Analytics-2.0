@@ -1,28 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
-:root {
-  --primary: #465e91;      
-  --primary-dark: #1e40af;
-  --accent: #10b981;     
-  --dark: #1f2937;
-  --light: #f9fafb;
-}
 
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --clr-primary: #29221d;
+  --clr-primar-light: #473b33;
+  --clr-secondary: #1e1611;
+  --clr-white: #fff;
+  --clr-black: #000;
+  --clr-pumpkin: #fe6c00;
+  --clr-silver: #a8a5a6;
+  --clr-silver-v1: #bdbabb;
+  --clr-scarlet: #fe1e00;
+  --clr-scarlet-v1: rgb(254, 30, 0, 0.79);
+  --clr-green: #00fe93;
+  --clr-yellow: #fec80a;
+  --clr-jet: #302924;
+  --clr-peach: #ffc397;
+  --font-family-bai: "Bai Jamjuree", sans-serif;
+  --transition-default: all 300ms ease-in-out;
 }
 
 body {
-  background-color: white;
-  color: var(--dark);
-  line-height: 1.6;
   font-family: var(--font-family-bai);
 }
-
 
 ul {
   list-style-type: none;
@@ -68,6 +73,7 @@ button {
 }
 
 .app {
+  display: flex;
   min-height: 100vh;
 }
 
@@ -81,7 +87,7 @@ button {
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 8px 24px;
   color: var(--clr-white);
-  padding: 24px;
+  padding: 18px;
 }
 .grid-c-title {
   display: flex;
@@ -95,10 +101,6 @@ button {
 }
 .grid-c-title-icon img {
   width: 24px;
-}
-
-.main-content{
-  padding-top: 80px;
 }
 
 @media screen and (max-width: 1400px) {

@@ -8,16 +8,12 @@ import Login from "./components/Loginpage/Login";
 import Footer from "./components/Loginpage/footer/footer";
 import Sidebar from './components/Dashbord/layout/Sidebar/Sidebar';
 import Content from './components/Dashbord/layout/Content/Content';
-import Charts from './components/Dashbord/Charts/Charts';
 
 import Charts_page from './components/Dashbord/Main_pages/Charts_page/Charts_page';
-import History_page from './components/Dashbord/Main_pages/History_page/Hstory_page';
-import AI_insides_page from './components/Dashbord/Main_pages/AI_insides_page/AI_insides_page';
+import Users_page from './components/Dashbord/Main_pages/Users_page/Users_page';
+import AI_Insights_page from './components/Dashbord/Main_pages/AI_Insights_page/AI_Insights_page';
 import Help_page from './components/Dashbord/Main_pages/Help_page/Help_page';
 import Setting_page from './components/Dashbord/Main_pages/Setting_page/Setting_page';
-import Hero from './components/Loginpage/hero/hero';
-import Feature from './components/Loginpage/feature/feature';
-import Divider from './components/Loginpage/divider/divider';
 // import Chart from './components/Dashbord/'
 // import {Menu} from 'antd'
 
@@ -28,33 +24,21 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/home" exact element = {
-        <>
-        <Navbar /> 
-        <Hero />
-        <Divider />
-        <Feature />
-        </>}/>
 			<Route path="/signup" exact element = {
         <>
         <Navbar /> 
         <Signup/> 
+        <Footer/> 
         </>}/>
 			<Route path="/login" exact element = {
         <>
         <Navbar />
-        <Login />  
+        <Login /> 
+        <Footer/> 
         </>}/>
-        <Route path="/charts" exact element = {
-        <>
-        <Navbar /> 
-        <Sidebar />
-        <Charts_page />
-        </>}/>
-      {<Route path="/" exact element={
+      {user && <Route path="/" exact element={
         <>
       <div className='app'>
-        <Navbar /> 
         <Sidebar />
         <Content />
         
@@ -63,34 +47,31 @@ function App() {
       </>} />}
         
       <Route path="/logout" element={ <Navigate replace to="/login" /> } />
-		  <Route path="/charts" exact element = {
+		  <Route path="/users" exact element = {
         <>
         <div className='app'>
-          <Navbar /> 
           <Sidebar/>
-          <Charts_page />
+          <Users_page/>
+          
         </div>
         </>}/>
-        <Route path="/history" exact element = {
+        <Route path="/charts" exact element = {
         <>
         <div className='app'>
-        <Navbar /> 
         <Sidebar />
-        <History_page/>
+        <Charts_page />
         </div>
         </>}/>
-         <Route path="/ai-insides" exact element = {
+         <Route path="/ai-insights" exact element = {
         <>
         <div className='app'>
-        <Navbar /> 
         <Sidebar />
-        <AI_insides_page/>
+        <AI_Insights_page/>
         </div>
         </>}/>
          <Route path="/help" exact element = {
         <>
         <div className='app'>
-        <Navbar /> 
         <Sidebar />
         <Help_page/>
         </div>
@@ -98,13 +79,21 @@ function App() {
          <Route path="/settings" exact element = {
         <>
         <div className='app'>
-        <Navbar /> 
         <Sidebar />
         <Setting_page/>
         </div>
         </>}/>
+
+
+
+
 		</Routes>
   )
 }
+
+
+
+  
+
 
 export default App

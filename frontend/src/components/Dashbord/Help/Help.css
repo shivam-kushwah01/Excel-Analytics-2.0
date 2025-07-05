@@ -1,6 +1,84 @@
-.grid-c6 .grid-item-fill {
+.grid-c8 .grid-item-fill {
   width: 60%;
   height: 10px;
   background-color: var(--clr-pumpkin);
   border-radius: 100vh;
+}
+
+.help-container {
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.help-title h1 {
+  color: #1e88e5;
+  margin-bottom: 5px;
+}
+
+.sub-title {
+  color: #bab9b9;
+  margin-bottom: 20px;
+}
+
+.help-content-split {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap; /* Makes it responsive */
+}
+
+/* Left side - FAQ */
+.faq-section {
+  flex: 1;
+  min-width: 280px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Right side - Contact */
+.contact-section {
+  flex: 1;
+  min-width: 280px;
+  background: #e3f2fd;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Common styles */
+.faq-item {
+  margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #1e88e5;
+  color: rgb(243, 230, 230);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #1565c0;
+}
+.help-content-split{
+  color: #3b3a39;
+}
+.help-title,
+ .faq-section,
+ .lg-value{
+  cursor: default;
+} 
+.contact-section h2{
+  cursor: default;
 }
