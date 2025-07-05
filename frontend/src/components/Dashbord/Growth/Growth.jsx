@@ -4,7 +4,7 @@ import "./Growth.css";
 
 const Growth = () => {
   return (
-    <div className="subgrid-two-item grid-common grid-c6">
+    <div className="subgrid-two-item grid-common grid-c6 blur">
         <div className="grid-c-title">
             <p>Growth Rate</p>
             <button className="grid-c-title-icon">

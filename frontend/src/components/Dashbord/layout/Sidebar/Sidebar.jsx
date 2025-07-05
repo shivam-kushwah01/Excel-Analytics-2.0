@@ -22,9 +22,6 @@ const Sidebar = () => {
 
   return (
     <div className={ `sidebar ${sidebarClass}` }>
-      <div className="user-info">
-          <span className="info-name">Excel Analytics</span>
-      </div>
       <nav className="navigation">
           <div className="nav-list">
             {navigationLinks.map((navigationLink) => (

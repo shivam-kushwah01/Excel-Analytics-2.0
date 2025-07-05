@@ -4,7 +4,7 @@ import { reportData } from "../data/data";
 
 const Process = () => {
   return (
-    <div className="grid-one-item grid-common grid-c3">
+    <div className="grid-one-item grid-common grid-c3 blur">
         <div className="grid-c-title">
             <p>Processing Time</p>
             <button className="grid-c-title-icon">

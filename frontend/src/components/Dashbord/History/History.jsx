@@ -4,7 +4,7 @@ import "./History.css";
 
 const Subscriptions = () => {
   return (
-    <div className="subgrid-two-item grid-common grid-c5">
+    <div className="subgrid-two-item grid-common grid-c5 blur">
         <div className="grid-c-title text-silver-v1">
             <h2 className="lg-value">History</h2>
             <button className="grid-c-title-icon">

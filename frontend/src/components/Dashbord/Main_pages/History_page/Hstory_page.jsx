@@ -6,7 +6,6 @@ import History from "../../History/History"
 const History_page = () => {
   return (
     <div className='main-content'>
-      <ContentTop />
       <History/>
     </div>
   )

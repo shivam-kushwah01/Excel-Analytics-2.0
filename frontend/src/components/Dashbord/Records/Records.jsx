@@ -4,7 +4,7 @@ import "./Records.css";
 
 const Records = () => {
   return (
-    <div className="grid-one-item grid-common grid-c1">
+    <div className="grid-one-item grid-common grid-c1 blur">
         <div className="grid-c-title">
             <p>Total Records</p>
             <button className="grid-c-title-icon">

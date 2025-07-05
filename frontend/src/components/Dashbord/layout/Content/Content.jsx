@@ -5,7 +5,6 @@ import ContentMain from '../../ContentMain/ContentMain';
 const Content = () => {
   return (
     <div className='main-content'>
-      <ContentTop />
       <ContentMain />
     </div>
   )

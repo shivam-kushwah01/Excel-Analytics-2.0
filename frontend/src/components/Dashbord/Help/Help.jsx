@@ -3,7 +3,7 @@ import { iconsImgs } from "../utils/images"
 
 const Financial = () => {
   return (
-    <div className="subgrid-two-item grid-common grid-c8">
+    <div className="subgrid-two-item grid-common grid-c8 blur">
         <div className="grid-c-title text-silver-v1">
             <h2 className="lg-value">Help</h2>
             <button className="grid-c-title-icon">

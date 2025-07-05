@@ -4,7 +4,7 @@ import { budget } from "../data/data";
 
 const Setting = () => {
   return (
-    <div className="grid-two-item grid-common grid-c4">
+    <div className="grid-two-item grid-common grid-c4 blur">
         
         <div className="grid-c-top text-silver-v1">
             <h2 className="lg-value">Charts</h2>

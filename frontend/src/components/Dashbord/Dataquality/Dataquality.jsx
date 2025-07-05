@@ -5,7 +5,7 @@ import { iconsImgs } from "../utils/images";
 
 const Dataquality = () => {
   return (
-    <div className="grid-one-item grid-common grid-c2">
+    <div className="grid-one-item grid-common grid-c2 blur">
         <div className="grid-c-title">
             <p>Data Qality</p>
             <button className="grid-c-title-icon">

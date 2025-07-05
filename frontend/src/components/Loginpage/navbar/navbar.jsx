@@ -21,15 +21,15 @@ const Navbar = () => {
   
     
     <div className='navbar'>
-        <p>Excel Analytics</p>
+        <div class="nav-logo">📊ExcelAnalytics</div>
         <div  className='nav-menu '>
             <Link to="/login">
-              <button type="button" className="nav-connect">
+              <button type="button" className="nav-connect btn btn-outline">
                 Login
               </button>
             </Link>
             <Link to="/signup">
-						<button type="button" className='nav-connect'>
+						<button type="button" className='nav-connect btn btn-primary'>
 							Sing Up
 						</button>
 					</Link>

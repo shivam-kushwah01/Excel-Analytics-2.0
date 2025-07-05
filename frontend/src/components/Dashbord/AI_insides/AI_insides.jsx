@@ -3,7 +3,7 @@ import "./AI_insides.css";
 
 const Loans = () => {
   return (
-    <div className="subgrid-two-item grid-common grid-c7">
+    <div className="subgrid-two-item grid-common grid-c7 blur">
         <div className="grid-c-title text-silver-v1">
             <h2 className="lg-value">AI Insides</h2>
             <button className="grid-c-title-icon">

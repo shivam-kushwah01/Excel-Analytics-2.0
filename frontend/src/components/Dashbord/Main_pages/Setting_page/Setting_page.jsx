@@ -6,7 +6,6 @@ import Setting from '../../Setting/Setting'
 const Setting_page = () => {
   return (
     <div className='main-content'>
-      <ContentTop />
       <Setting/>
     </div>
   )

@@ -3,6 +3,8 @@
     flex: 1;
     padding: 32px;
     margin-left: 16rem;
+    padding-top: 6rem;
+    
   }
 
   @media screen and (max-width: 1400px) {
