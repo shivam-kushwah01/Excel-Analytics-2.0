@@ -14,7 +14,7 @@ const UnEditedUsers = () => {
   const fetchTotalUsers = async () => {
     try {
       const res = await axios.get("http://localhost:8080/api/userscrud"); // Adjust if needed
-      setTotalUsers(res.data.length); // ✅ Count the users
+      setTotalUsers(res.data.length); // Count the users
     } catch (error) {
       console.error("Error fetching users:", error);
     }

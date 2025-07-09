@@ -14,7 +14,7 @@ const TotalUsers = () => {
   const fetchTotalUsers = async () => {
     try {
       const res = await axios.get("http://localhost:8080/api/userscrud"); // Adjust if needed
-      setTotalUsers(res.data.length); // ✅ Count the users
+      setTotalUsers(res.data.length); // Count the users
     } catch (error) {
       console.error("Error fetching users:", error);
     }
@@ -31,7 +31,7 @@ const TotalUsers = () => {
 
       <div className="grid-box1">
         <img src={iconsImgs.verified} />
-        <span className="lg-value"> Total Usres<br></br> <br></br>  {totalUsers}</span> {/* ✅ Dynamic user count */}
+        <span className="lg-value"> Total Usres<br></br> <br></br>  {totalUsers}</span> {/* Dynamic user count */}
       </div>
       <br />
       
