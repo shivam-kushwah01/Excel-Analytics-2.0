@@ -1,32 +1,45 @@
 import { useState, useEffect } from "react";
+import axios from "axios";
 import { iconsImgs } from "../utils/images";
-import "./DeletedUsers.css";
 
-const DeletedUsers = () => {
-  const [deletedUsers, setDeletedUsers] = useState(0);
+import "./UnEditedUsers.css"; // You can reuse or copy the existing EditedUsers.css
+
+const UnEditedUsers = () => {
+  const [unEditedUsers, setUnEditedUsers] = useState(0);
 
   useEffect(() => {
-    fetchDeletedUsers();
+    fetchUnEditedUsers();
   }, []);
 
-  const fetchDeletedUsers = () => {
-    const deletedIds = JSON.parse(localStorage.getItem("deletedUserIds") || "[]");
-    setDeletedUsers(deletedIds.length);
+  const fetchUnEditedUsers = async () => {
+    try {
+      const res = await axios.get("http://localhost:8080/api/userscrud");
+
+      // Filter users that are NOT marked as edited
+      const unedited = res.data.filter(
+        user => !user.status || user.status !== "edited"
+      );
+
+      setUnEditedUsers(unedited.length);
+    } catch (error) {
+      console.error("Error fetching unedited users:", error);
+    }
   };
 
   return (
     <div className="grid-one-item grid-common grid-c1">
       <div className="grid-c-title">
-       
+        {/* <p>Unedited Users</p> */}
       </div>
+
       <div className="grid-box1">
         <img src={iconsImgs.verified} alt="icon" />
         <span className="lg-value">
-          Deleted Users<br /><br />{deletedUsers}
+          Unedited Users<br /><br />{unEditedUsers}
         </span>
       </div>
     </div>
   );
 };
 
-export default DeletedUsers;
+export default UnEditedUsers;
