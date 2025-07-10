@@ -1,23 +1,17 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
 import { iconsImgs } from "../utils/images";
+import "./DeletedUsers.css";
 
-import "./DeletedUser.css";
-
-const DeletedUser = () => {
-  const [totalUsers, setTotalUsers] = useState(0);
+const DeletedUsers = () => {
+  const [deletedUsers, setDeletedUsers] = useState(0);
 
   useEffect(() => {
-    fetchTotalUsers();
+    fetchDeletedUsers();
   }, []);
 
-  const fetchTotalUsers = async () => {
-    try {
-      const res = await axios.get("http://localhost:8080/api/userscrud"); // Adjust if needed
-      setTotalUsers(res.data.length); //  Count the users
-    } catch (error) {
-      console.error("Error fetching users:", error);
-    }
+  const fetchDeletedUsers = () => {
+    const deletedIds = JSON.parse(localStorage.getItem("deletedUserIds") || "[]");
+    setDeletedUsers(deletedIds.length);
   };
 
   return (
@@ -25,15 +19,14 @@ const DeletedUser = () => {
       <div className="grid-c-title">
        
       </div>
-
       <div className="grid-box1">
-        <img src={iconsImgs.deleteduser} />
-        <span className="lg-value"> Deleted Usres<br></br> <br></br>  {totalUsers}</span> {/* Dynamic user count */}
+        <img src={iconsImgs.verified} alt="icon" />
+        <span className="lg-value">
+          Deleted Users<br /><br />{deletedUsers}
+        </span>
       </div>
-      <br />
-      
     </div>
   );
 };
 
-export default DeletedUser;
+export default DeletedUsers;
