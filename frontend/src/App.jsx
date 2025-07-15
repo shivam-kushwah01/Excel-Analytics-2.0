@@ -36,7 +36,7 @@ function App() {
         <Login /> 
         <Footer/> 
         </>}/>
-      {user && <Route path="/" exact element={
+      <Route path="/" exact element={
         <>
       <div className='app'>
         <Sidebar />
@@ -44,7 +44,7 @@ function App() {
         
       </div>
       
-      </>} />}
+      </>} />  {/* {user && } */}
         
       <Route path="/logout" element={ <Navigate replace to="/login" /> } />
 		  <Route path="/users" exact element = {
