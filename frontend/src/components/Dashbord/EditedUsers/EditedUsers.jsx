@@ -2,39 +2,40 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { iconsImgs } from "../utils/images";
 
-import "./EditedUsers.css";
+import "./EditedUsers.css"; // You can reuse this CSS for styling
 
 const EditedUsers = () => {
-  const [totalUsers, setTotalUsers] = useState(0);
+  const [editedUsers, setEditedUsers] = useState(0);
 
   useEffect(() => {
-    fetchTotalUsers();
+    fetchEditedUsers();
   }, []);
 
-  const fetchTotalUsers = async () => {
+  const fetchEditedUsers = async () => {
     try {
-      const res = await axios.get("http://localhost:8080/api/userscrud"); // Adjust if needed
-      setTotalUsers(res.data.length); // ✅ Count the users
+      const res = await axios.get("http://localhost:8080/api/userscrud");
+
+      // Filter users with 'status' === 'edited'
+      const edited = res.data.filter(user => user.status === "edited");
+
+      setEditedUsers(edited.length);
     } catch (error) {
-      console.error("Error fetching users:", error);
+      console.error("Error fetching edited users:", error);
     }
   };
 
   return (
-    <div className="grid-one-item grid-common grid-c2">
+    <div className="grid-one-item grid-common grid-c1">
       <div className="grid-c-title">
-        {/* <p>Total Records</p>
-        <button className="grid-c-title-icon">
-          <img src={iconsImgs.plus} />
-        </button> */}
+       
       </div>
 
-      <div className="grid-box2">
-        <img src={iconsImgs.usersavatar} />
-        <span className="lg-value"> Edited Usres<br></br> <br></br>  {totalUsers}</span> {/* ✅ Dynamic user count */}
+      <div className="grid-box1">
+        <img src={iconsImgs.verified} alt="icon" />
+        <span className="lg-value">
+          Edited Users<br /><br />{editedUsers}
+        </span>
       </div>
-      <br />
-      
     </div>
   );
 };

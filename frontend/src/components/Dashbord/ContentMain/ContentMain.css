@@ -1,25 +1,61 @@
-/* main content holder */
+/* Ensure full height is used */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+}
+
+/* Main layout wrapper */
 .main-content-holder {
   display: grid;
-  row-gap: 20px;
+  row-gap: 16px;
+  min-height: 100vh;
+  padding: 16px;
+  box-sizing: border-box;
 }
+
+/* Top grid with 4 stats */
 .content-grid-one {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 16px;
 }
+
+/* Bottom grid with charts and users */
 .content-grid-two {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 16px;
+  row-gap: 16px;
 }
 
+/* Each chart/user box */
+.grid-two-item {
+  display: flex;
+  flex-direction: column;
+  background: #29221d;
+  padding: 16px;
+  border-radius: 8px;
+  min-height: 250px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  overflow: auto;
+  
+}
+
+
+
+/* Nested user subgrid */
 .subgrid-two {
   display: grid;
-  
+  grid-template-columns: repeat(1, 1fr);
   height: 100%;
+  gap: 12px;
 }
 
+/* Responsive rules */
 @media screen and (max-width: 1200px) {
   .content-grid-one,
   .content-grid-two {
@@ -36,41 +72,35 @@
     grid-template-columns: repeat(2, 1fr);
     row-gap: 12px;
   }
+
   .content-grid-two {
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 12px;
   }
+
   .content-grid-two .grid-two-item:nth-child(3) {
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column: 1 / -1;
   }
+
   .content-grid-two .grid-two-item:nth-child(3) .subgrid-two {
     grid-template-columns: repeat(2, 1fr);
-    height: 220px;
-    column-gap: 12px;
-  }
-  .content-grid-two {
-    row-gap: 12px;
+    height: auto;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .content-grid-one {
-    grid-template-columns: repeat(1, 1fr);
-    column-gap: 0;
-  }
+  .content-grid-one,
   .content-grid-two {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     column-gap: 0;
   }
-  .content-grid-two .grid-two-item:nth-child(1) {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
+
   .content-grid-two .grid-two-item:nth-child(3) .subgrid-two {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     height: auto;
   }
+
   .content-grid-two .grid-two-item:nth-child(3) .subgrid-two .subgrid-two-item {
-    height: 220px;
+    height: auto;
   }
 }
