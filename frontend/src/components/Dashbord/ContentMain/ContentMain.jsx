@@ -5,7 +5,7 @@ import EditedUsers from "../EditedUsers/EditedUsers";
 import UnEditedUsers from "../UnEditedUsers/UnEditedUsers";
 import Charts from "../Charts/Charts";
 import Users from "../Users/UserList";
-import DeleteUsers from "../DeletedUser/DeletedUser";
+// import DeleteUsers from "../DeletedUser/DeletedUser";
 import AI_Insights from "../AI_Insights/AI_Insights";
 // import Help from "../Help/Help";
 import TotalUsers from "../TotalUsers/TotalUsers";
@@ -17,7 +17,7 @@ const ContentMain = () => {
             <TotalUsers />
             <EditedUsers />
             <UnEditedUsers />
-            <DeleteUsers />
+            {/* <DeleteUsers /> */}
         </div>
         <div className="content-grid-two">
             <Charts />
