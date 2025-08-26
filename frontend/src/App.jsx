@@ -28,13 +28,13 @@ function App() {
         <>
         <Navbar /> 
         <Signup/> 
-        <Footer/> 
+        {/* <Footer/>  */}
         </>}/>
 			<Route path="/login" exact element = {
         <>
         <Navbar />
         <Login /> 
-        <Footer/> 
+        {/* <Footer/>  */}
         </>}/>
       <Route path="/" exact element={
         <>
