@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { iconsImgs } from "../utils/images";
 
-import "./UnEditedUsers.css"; // You can reuse or copy the existing EditedUsers.css
+import "../UnEditedUsers/UnEditedUsers.css";
 
 const UnEditedUsers = () => {
   const [unEditedUsers, setUnEditedUsers] = useState(0);

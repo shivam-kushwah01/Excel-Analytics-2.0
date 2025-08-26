@@ -31,7 +31,7 @@ const TotalUsers = () => {
 
       <div className="grid-box1">
         <img src={iconsImgs.verified} />
-        <span className="lg-value"> Total Usres<br></br> <br></br>  {totalUsers}</span> {/* Dynamic user count */}
+        <span className="lg-value"> Total Users<br></br> <br></br>  {totalUsers}</span> {/* Dynamic user count */}
       </div>
       <br />
       

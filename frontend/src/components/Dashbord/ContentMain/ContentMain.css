@@ -12,7 +12,7 @@ html, body, #root {
 .main-content-holder {
   display: grid;
   row-gap: 16px;
-  min-height: 100vh;
+  min-height: 6rem;
   padding: 16px;
   box-sizing: border-box;
 }
@@ -27,7 +27,7 @@ html, body, #root {
 /* Bottom grid with charts and users */
 .content-grid-two {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   column-gap: 16px;
   row-gap: 16px;
 }

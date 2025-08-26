@@ -28,7 +28,7 @@ const UnEditedUsers = () => {
 
       <div className="grid-box3">
         <img src={iconsImgs.users} />
-        <span className="lg-value"> UnEdited Usres<br></br> <br></br>  {totalUsers}</span> {/* ✅ Dynamic user count */}
+        <span className="lg-value"> UnEdited Users<br></br> <br></br>  {totalUsers}</span> {/* ✅ Dynamic user count */}
       </div>
       <br />
       

@@ -3,11 +3,8 @@ import "./ContentMain.css";
 
 import EditedUsers from "../EditedUsers/EditedUsers";
 import UnEditedUsers from "../UnEditedUsers/UnEditedUsers";
-import Charts from "../Charts/Charts";
 import Users from "../Users/UserList";
-// import DeleteUsers from "../DeletedUser/DeletedUser";
-import AI_Insights from "../AI_Insights/AI_Insights";
-// import Help from "../Help/Help";
+import DeleteUsers from "../DeletedUsers/DeletedUsers";
 import TotalUsers from "../TotalUsers/TotalUsers";
 
 const ContentMain = () => {
@@ -17,23 +14,12 @@ const ContentMain = () => {
             <TotalUsers />
             <EditedUsers />
             <UnEditedUsers />
-            {/* <DeleteUsers /> */}
+            <DeleteUsers />
         </div>
         <div className="content-grid-two">
-            <Charts />
-            <div className="grid-two-item">
               <div className="subgrid-two">
                 <Users />
-               
               </div>
-            </div>
-
-            <div className="grid-two-item">
-              <div className="subgrid-two">
-                <AI_Insights />
-               
-              </div>
-            </div>
         </div>
     </div>
   )

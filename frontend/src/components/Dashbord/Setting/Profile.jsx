@@ -26,9 +26,8 @@ export default function ProfileTab() {
       <div className="right-card">
         <h3>About Us</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
-          blanditiis tenetur unde suscipit, quam beatae rerum inventore
-          consectetur.
+          At Excel Analytics, we believe data should work for you, not against you.
+Our mission is simple: to empower businesses, professionals, and students with clear, actionable insights using the most familiar tool in the world of analytics — Microsoft Excel.
         </p>
 
         <div className="details">
